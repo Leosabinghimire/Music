@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fontawesome icon -->
+    <script
+      src="https://kit.fontawesome.com/21d78ea9e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Music-Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav class="navigation">
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img
+          src="Media/girl-5909741_640 (1).png"
+          alt="music profile"
+          class="music-img"
+        />
+        <h1>Le Monde</h1>
+        <p>Richard Carter</p>
+
+        <audio id="song">
+          <source src="Media/Richard Carter - Le Monde.mp3" type="audio/mpeg" />
+        </audio>
+        <input type="range" value="0" id="progress" />
+
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript link -->
+    <script src="script.js"></script>
+  </body>
+</html>
