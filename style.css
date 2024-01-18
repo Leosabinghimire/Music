@@ -7,6 +7,7 @@
 
 body {
   background-image: url('Media/frank-septillion-Qrspubmx6kE-unsplash.jpg');
+  background-size: cover;
 }
 
 .container {
@@ -102,4 +103,37 @@ body {
   transform: scale(1.5);
   background: #0E1B0D;
   color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width:600px) {
+
+  .music-img {
+    max-width: 150px;
+  }
+
+  .music-player h1 {
+    font-size: 18px;
+  }
+
+  .music-player p {
+    font-size: 10px;
+  }
+
+  #progress::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    box-shadow: 0 3px 10px rgba(53, 6, 112, 0.22);
+  }
+
+  .controls div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+
+  .controls div:nth-child(2) {
+    transform: scale(1);
+  }
 }
