@@ -35,14 +35,16 @@
         <input type="range" value="0" id="progress" />
 
         <div class="controls">
-          <div><i class="fa-solid fa-backward"></i></div>
-          <div onclick="playPause()">
-            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          <div onclick="previousSong()" id="backBtn">
+            <i class="fas fa-backward"></i>
           </div>
-          <div><i class="fa-solid fa-forward"></i></div>
+          <div onclick="playPause()">
+            <i class="fas fa-play" id="ctrlIcon"></i>
+          </div>
+          <div onclick="nextSong()" id="nextBtn">
+            <i class="fas fa-forward"></i>
+          </div>
         </div>
-      </div>
-    </div>
 
     <!-- Javascript link -->
     <script src="script.js"></script>
