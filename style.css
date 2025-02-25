@@ -40,6 +40,7 @@ body {
 
 .music-img {
   width: 220px;
+  height: 220px;
   border-radius: 50%;
   border: 10px solid #fff;
   box-shadow: 0 10px 60px rgba(53, 6, 112, 0.22);
